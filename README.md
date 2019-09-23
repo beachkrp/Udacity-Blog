@@ -2,6 +2,11 @@
 
 This project takes a look at the past three Stack Over Flow Develper Surveys from 2017, 2018 and 2019  to look at a couple of different items to see how they compare from year to year.
 
+# Motivation
+
+To take a peek and to try to gain some insight from the Stack Overflow surveys to get a view of the status of the industry as seen  by the developers that chose to respond
+
+
 
 ## Data
  
@@ -15,6 +20,11 @@ This project takes a look at the past three Stack Over Flow Develper Surveys fro
 
 ##   The code can be found at 
 `git clone https://github.com/beachkrp/Blog.git`
+
+## Files in the Repository
+
+A Jupyter Notebook with the code for this project
+This README file
 
 ## Examining the Distribution of respondants by country.
 
@@ -40,7 +50,22 @@ Another issue is that Salary column for the 2018 is a string value and not a num
 
 Because the surveys from the various years were of different lengths, there were a number of nan values which caused problems with the plotting of box plots.  Thus each column had to have the null values dropped before they could  be plotted
 
+The missing values were dropped and not imputed because in the drawing of a box plot, the quartiles are key in a visual interpreatation of the data.  While it may be tempting to impute the mean or the median value into the missing values, to do so would "shrink the box" and greatly distort the visualization
+
 
 ## Blog 
 
  The actual blog can be found on [Medium](https://medium.com/@kevinpearson_20937/a-quick-peek-at-stack-overflow-surveys-from-2017-to-2019-4a330b32a1e2)
+ 
+ 
+ # Acknowledgemenst
+ 
+ Python Data Science and Machine Learning Bootcamp, Pierian Data
+ 
+ https://stackoverflow.com/questions/22483588/how-can-i-plot-separate-pandas-dataframes-as-subplots
+ 
+ https://github.com/matplotlib/matplotlib/issues/8105/
+ 
+ https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.subplots.html
+ 
+ 
