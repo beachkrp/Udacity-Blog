@@ -8,7 +8,9 @@ This project takes a look at the past three Stack Over Flow Develper Surveys fro
  The datasets are too large to be stored on GitHub so the data could be found here
  
  [2019 Survey] (https://drive.google.com/open?id=1QOmVDpd8hcVYqqUXDXf68UMDWQZP0wQV)
+ 
  [2018 Survey] (https://drive.google.com/uc?export=download&id=1_9On2-nsBQIw3JiY43sWbrF8EjrqrR4U)
+ 
  [2017 Survey] (https://drive.google.com/uc?export=download&id=0B6ZlG_Eygdj-c1kzcmUxN05VUXM)
 
 ##   The code can be found at 
@@ -28,7 +30,7 @@ subplot below.  It actually became a better looking presentatin to plot three ba
  Fortunately, the Pandas.str library also has methods for stripping whitespace and for replacing regular expressions.  These methods are combined to be able to extract the different languages used and then this column is tranformed into a language matrix which is used for visualization. 
 
 
-##Salaries comparison
+## Salaries comparison
 
 Comparing the salaries from year to year are not straight forward for a number of reason.   First of all, the "Salary"  column for the 2019 survey does not exist and there is a column for Total Compensation, and it is not clear how this relates to the Salary in the previous years' survey.
 
@@ -37,3 +39,8 @@ Also, there is an issue with different countries using different currencies, so 
 Another issue is that Salary column for the 2018 is a string value and not a number so it has to be wrangled to be a float to be able to be used for a box plot, which was the preferred format.
 
 Because the surveys from the various years were of different lengths, there were a number of nan values which caused problems with the plotting of box plots.  Thus each column had to have the null values dropped before they could  be plotted
+
+
+## Blog 
+
+ The actual blog can be found on [Medium](https://medium.com/@kevinpearson_20937/a-quick-peek-at-stack-overflow-surveys-from-2017-to-2019-4a330b32a1e2)
